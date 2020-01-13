@@ -19,19 +19,6 @@ public class TestStudentSetAge {
 		}
 	}
 
-	@Test
-	public void testException() {
-		int[] marks= {10, 6, 9, 8}; 
-		Student s= new Student("Gigel", 20,
-				marks, EFaculty.CSIE); 
-		try {
-			s.setAge(16);
-			fail("dindn't throw an exception when it should have");
-		} catch (ExceptionInputAge e) {
-			e.printStackTrace();
-			assertTrue(true); 
-		}
-	}
 
 	@Test
 	public void testBoundaryLowestValue() {
